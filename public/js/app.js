@@ -1,7 +1,3 @@
-
-
-
-
 //grap the search form input
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
@@ -16,7 +12,8 @@ weatherForm.addEventListener('submit', (e) => {
     messageTwo.textContent = ''    
 
     const location = search.value
-    const url = 'http://localhost:3000/weather?address='+location
+    //const url = 'http://localhost:3000/weather?address='+location
+    const url = '/weather?address='+location
 
 
 

@@ -15,8 +15,6 @@ const forecast = (lat, lon, callback) => {
     const url = 'http://api.weatherstack.com/current?access_key=5e2911cb208fbd074f06fc27506065ec&query='
                 + lat + ',' + lon
     
-    console.log(url)
-
     request({url:url, json:true}, (error, {body}) => {//    request({url, json:true}, (error, {body}) => {
 
         if (error) {
